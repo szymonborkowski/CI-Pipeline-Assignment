@@ -1,6 +1,7 @@
 package college;
 
 import org.joda.time.DateTime;
+
 import java.util.ArrayList;
 
 public class CourseProgramme {
@@ -69,4 +70,37 @@ public class CourseProgramme {
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        String courseString = "";
+        courseString += "Course name: " + courseName + "\n";
+        courseString += "Associated modules: ";
+        for(int i = 0; i < modules.size(); i++) {
+            if (i != modules.size()-1)
+                courseString += modules.get(i) + ", ";
+            else
+                courseString += modules.get(i);
+        }
+
+        return courseString;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

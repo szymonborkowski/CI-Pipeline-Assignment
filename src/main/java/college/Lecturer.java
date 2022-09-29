@@ -64,7 +64,7 @@ public class Lecturer {
         this.modulesTeaching = modulesTeaching;
     }
 
-    @Override // name age dateOfBirth ID username modulesTeaching
+    @Override
     public boolean equals(Object obj) {
         if(obj instanceof Lecturer) {
             Lecturer comparison = (Lecturer) obj;
@@ -75,5 +75,17 @@ public class Lecturer {
                     username.equals(comparison.getUsername());
         }
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Lecturer{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", dateOfBirth=" + dateOfBirth +
+                ", ID=" + ID +
+                ", username='" + username + '\'' +
+                ", modulesTeaching=" + modulesTeaching +
+                '}';
     }
 }

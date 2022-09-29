@@ -1,7 +1,6 @@
 package college;
 
 import org.joda.time.DateTime;
-
 import java.util.ArrayList;
 
 public class Student {
@@ -85,5 +84,28 @@ public class Student {
                     username.equals(comparison.getUsername());
         }
         return false;
+    }
+
+    @Override
+    public String toString() {
+        String studentString = "";
+
+        studentString += "Student name: " + name + "\n";
+        studentString += "Student username: " + getUsername() + "\n";
+        studentString += "Associated modules: ";
+        for(int i = 0; i < modules.size(); i++) {
+            if (i != modules.size()-1)
+                studentString += modules.get(i) + ", ";
+            else
+                studentString += modules.get(i);
+        }
+        studentString += "\nRegistered Courses: ";
+        for(int i = 0; i < courses.size(); i++) {
+            if (i != courses.size()-1)
+                studentString += courses.get(i).getCourseName() + ", ";
+            else
+                studentString += courses.get(i).getCourseName();
+        }
+        return studentString;
     }
 }

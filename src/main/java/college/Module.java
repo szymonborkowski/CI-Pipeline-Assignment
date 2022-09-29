@@ -53,4 +53,9 @@ public class Module {
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        return moduleName;
+    }
 }
