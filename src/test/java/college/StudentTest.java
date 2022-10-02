@@ -1,18 +1,16 @@
 package college;
 
-import org.checkerframework.checker.units.qual.A;
 import org.joda.time.DateTime;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class StudentTest {
 
     Student student;
 
+    // This setup means you don't have to create a new Student Object for each individual test
     @BeforeEach
     void setUp() {
         // Create course
@@ -124,5 +122,12 @@ class StudentTest {
         modules.add(module);
         student.setModules(modules);
         assertEquals(modules, student.getModules());
+    }
+
+    @Test
+    void equalsTest() {
+        DateTime dateOfBirth = new DateTime(2001, 9, 11, 10, 59);
+        Student testStudent = new Student("Joe", 21, dateOfBirth, 19307527);
+        assertEquals(testStudent, this.student);
     }
 }

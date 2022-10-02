@@ -13,6 +13,7 @@ class LecturerTest {
     Lecturer lecturer;
     Module module;
 
+    // This setup means you don't have to create a new Lecturer Object for each individual test
     @BeforeEach
     void setUp() {
         // Create a Module for the Lecturer
@@ -94,6 +95,12 @@ class LecturerTest {
         assertEquals(modules, lecturer.getModulesTeaching());
     }
 
+    @Test
+    void equalsTest() {
+        DateTime dateOfBirth = new DateTime(1969, 7, 16, 20, 31);
+        Lecturer testLecturer = new Lecturer("Buzz", 53, dateOfBirth, 69731038);
+        assertEquals(testLecturer, this.lecturer);
+    }
 }
 
 

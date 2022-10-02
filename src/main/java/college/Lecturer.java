@@ -5,12 +5,13 @@ import java.util.ArrayList;
 
 public class Lecturer {
 
-    public String name;
-    public int age;
-    public DateTime dateOfBirth;
-    public int ID;
-    public String username;
-    public ArrayList<Module> modulesTeaching;
+    // Required fields for the Lecturer Class
+    private String name;
+    private int age;
+    private DateTime dateOfBirth;
+    private int ID;
+    private String username;
+    private ArrayList<Module> modulesTeaching;
 
     public Lecturer(String name, int age, DateTime dateOfBirth, int ID) {
         this.name = name;
@@ -64,6 +65,7 @@ public class Lecturer {
         this.modulesTeaching = modulesTeaching;
     }
 
+    // Equals method used for comparing Lecturer classes in Unit testing
     @Override
     public boolean equals(Object obj) {
         if(obj instanceof Lecturer) {
@@ -75,17 +77,5 @@ public class Lecturer {
                     username.equals(comparison.getUsername());
         }
         return false;
-    }
-
-    @Override
-    public String toString() {
-        return "Lecturer{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", dateOfBirth=" + dateOfBirth +
-                ", ID=" + ID +
-                ", username='" + username + '\'' +
-                ", modulesTeaching=" + modulesTeaching +
-                '}';
     }
 }

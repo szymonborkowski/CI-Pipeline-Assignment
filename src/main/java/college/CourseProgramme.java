@@ -1,17 +1,16 @@
 package college;
 
 import org.joda.time.DateTime;
-
 import java.util.ArrayList;
 
 public class CourseProgramme {
 
-    public String courseName;
-    public ArrayList<Module> modules;
-    public ArrayList<Student> enrolledStudents;
-
-    public DateTime startDate;
-    public DateTime endDate;
+    // Required fields for the CourseProgramme Class
+    private String courseName;
+    private ArrayList<Module> modules;
+    private ArrayList<Student> enrolledStudents;
+    private DateTime startDate;
+    private DateTime endDate;
 
     public CourseProgramme(String courseName, DateTime startDate, DateTime endDate) {
         this.courseName = courseName;
@@ -59,7 +58,7 @@ public class CourseProgramme {
         this.endDate = endDate;
     }
 
-    // courseName modules enrolledStudents startDate endDate
+    // Equals method used for comparing CourseProgramme classes in Unit testing
     @Override
     public boolean equals(Object obj) {
         if(obj instanceof CourseProgramme) {
@@ -71,19 +70,20 @@ public class CourseProgramme {
         return false;
     }
 
+    // toString method used for printing details in the Driver project (part b))
     @Override
     public String toString() {
-        String courseString = "";
-        courseString += "Course name: " + courseName + "\n";
-        courseString += "Associated modules: ";
+        StringBuilder courseString = new StringBuilder("\n====== COURSE ======\n");
+        courseString.append("Course name: ").append(courseName).append("\n");
+        courseString.append("Associated modules: \n");
         for(int i = 0; i < modules.size(); i++) {
             if (i != modules.size()-1)
-                courseString += modules.get(i) + ", ";
+                courseString.append("\t").append(modules.get(i)).append("\n");
             else
-                courseString += modules.get(i);
+                courseString.append("\t").append(modules.get(i));
         }
 
-        return courseString;
+        return courseString.toString();
     }
 }
 

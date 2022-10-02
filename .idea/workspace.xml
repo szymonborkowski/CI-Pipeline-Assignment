@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6c513342-9c89-4aab-95f8-8fbaf067479f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/college/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/college/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/college/CourseProgramme.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/college/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/college/Lecturer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/college/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/college/Module.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/college/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/college/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/college/CourseProgrammeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/college/CourseProgrammeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/college/LecturerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/college/LecturerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/college/ModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/college/ModuleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/college/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/college/StudentTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +24,26 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CI-Pipeline-Assignment" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -69,10 +92,10 @@
       <recent name="college" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="college.Main" />
-      <module name="CI-Pipeline-Assignment.test" />
+      <module name="CI-Pipeline-Assignment.main" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="college.*" />
@@ -83,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CourseProgrammeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CourseProgrammeTest.equalsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -96,7 +119,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;college.CourseProgrammeTest&quot;" />
+            <option value="&quot;college.CourseProgrammeTest.equalsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -106,7 +129,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="LecturerTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="LecturerTest.equalsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -119,7 +142,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;college.LecturerTest&quot;" />
+            <option value="&quot;college.LecturerTest.equalsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -129,7 +152,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ModuleTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ModuleTest.equalsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -142,7 +165,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;college.ModuleTest&quot;" />
+            <option value="&quot;college.ModuleTest.equalsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -152,7 +175,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ModuleTest.getStudentListTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="StudentTest.equalsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -165,7 +188,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;college.ModuleTest.getStudentListTest&quot;" />
+            <option value="&quot;college.StudentTest.equalsTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -177,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Gradle.ModuleTest.getStudentListTest" />
-        <item itemvalue="Gradle.CourseProgrammeTest" />
-        <item itemvalue="Gradle.LecturerTest" />
-        <item itemvalue="Gradle.ModuleTest" />
+        <item itemvalue="Gradle.CourseProgrammeTest.equalsTest" />
+        <item itemvalue="Gradle.LecturerTest.equalsTest" />
+        <item itemvalue="Gradle.ModuleTest.equalsTest" />
+        <item itemvalue="Gradle.StudentTest.equalsTest" />
+        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>

@@ -10,6 +10,7 @@ class ModuleTest {
 
     Module module;
 
+    // This setup means you don't have to create a new Module Object for each individual test
     @BeforeEach
     void setUp() {
         // Create Student list for Module
@@ -100,5 +101,11 @@ class ModuleTest {
         Lecturer lecturer = new Lecturer("Seamus", 37, dateOfBirth, 85213629);
         module.setAssignedLecturer(lecturer);
         assertEquals(lecturer, module.getAssignedLecturer());
+    }
+
+    @Test
+    void equalsTest() {
+        Module testModule = new Module("Software Engineering");
+        assertEquals(testModule, this.module);
     }
 }

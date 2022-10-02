@@ -5,13 +5,14 @@ import java.util.ArrayList;
 
 public class Student {
 
-    public String name;
-    public int age;
-    public DateTime dateOfBirth;
-    public int ID;
-    public String username;
-    public ArrayList<CourseProgramme> courses;
-    public ArrayList<Module> modules;
+    // Required fields for the Student Class
+    private String name;
+    private int age;
+    private DateTime dateOfBirth;
+    private int ID;
+    private String username;
+    private ArrayList<CourseProgramme> courses;
+    private ArrayList<Module> modules;
 
     public Student(String name, int age, DateTime dateOfBirth, int ID) {
         this.name = name;
@@ -73,6 +74,7 @@ public class Student {
         this.modules = modules;
     }
 
+    // Equals method used for comparing Student classes in Unit testing
     @Override
     public boolean equals(Object obj) {
         if(obj instanceof Student) {
@@ -86,26 +88,27 @@ public class Student {
         return false;
     }
 
+    // toString method used for printing details in the Driver project (part b))
     @Override
     public String toString() {
-        String studentString = "";
+        StringBuilder studentString = new StringBuilder();
 
-        studentString += "Student name: " + name + "\n";
-        studentString += "Student username: " + getUsername() + "\n";
-        studentString += "Associated modules: ";
+        studentString.append("Student name: ").append(name).append("\n");
+        studentString.append("\t\tStudent username: ").append(getUsername()).append("\n");
+        studentString.append("\t\tAssociated modules: ");
         for(int i = 0; i < modules.size(); i++) {
             if (i != modules.size()-1)
-                studentString += modules.get(i) + ", ";
+                studentString.append(modules.get(i).getModuleName()).append(", ");
             else
-                studentString += modules.get(i);
+                studentString.append(modules.get(i).getModuleName());
         }
-        studentString += "\nRegistered Courses: ";
+        studentString.append("\n\t\tRegistered Courses: ");
         for(int i = 0; i < courses.size(); i++) {
             if (i != courses.size()-1)
-                studentString += courses.get(i).getCourseName() + ", ";
+                studentString.append(courses.get(i).getCourseName()).append(", ");
             else
-                studentString += courses.get(i).getCourseName();
+                studentString.append(courses.get(i).getCourseName());
         }
-        return studentString;
+        return studentString.toString();
     }
 }

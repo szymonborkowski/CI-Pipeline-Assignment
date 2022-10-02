@@ -3,9 +3,7 @@ package college;
 import org.joda.time.DateTime;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import java.util.ArrayList;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class CourseProgrammeTest {
@@ -109,4 +107,12 @@ class CourseProgrammeTest {
         assertEquals(testNewEndDate, courseProgramme.getEndDate());
     }
 
+    @Test
+    void equalsTest() {
+        // Create the CourseProgramme Object which is then used for each test
+        DateTime startDate = new DateTime(2022, 9, 1, 9, 0);
+        DateTime endDate = new DateTime(2023, 5, 20, 17, 0);
+        CourseProgramme testCourseProgramme = new CourseProgramme("Computer Science", startDate, endDate);
+        assertEquals(testCourseProgramme, this.courseProgramme);
+    }
 }
