@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c513342-9c89-4aab-95f8-8fbaf067479f" name="Changes" comment="">
+    <list default="true" id="6c513342-9c89-4aab-95f8-8fbaf067479f" name="Changes" comment="Making updates to Classes and Unit tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/college/CourseProgramme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/college/CourseProgramme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/college/Lecturer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/college/Lecturer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/college/Module.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/college/Module.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/college/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/college/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/college/CourseProgrammeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/college/CourseProgrammeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/college/LecturerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/college/LecturerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/college/ModuleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/college/ModuleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/college/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/college/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +30,47 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="CI-Pipeline-Assignment" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CI-Pipeline-Assignment" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CI-Pipeline-Assignment" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CI-Pipeline-Assignment" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CI-Pipeline-Assignment" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="documentation" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CI-Pipeline-Assignment" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="help" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CI-Pipeline-Assignment" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="CI-Pipeline-Assignment" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="verification" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -92,19 +126,27 @@
       <recent name="college" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="college.Main" />
-      <module name="CI-Pipeline-Assignment.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="college.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.CI-Pipeline-Assignment [war]">
+    <configuration name="CI-Pipeline-Assignment [war]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="war" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
     </configuration>
     <configuration name="CourseProgrammeTest.equalsTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -200,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CI-Pipeline-Assignment [war]" />
         <item itemvalue="Gradle.CourseProgrammeTest.equalsTest" />
         <item itemvalue="Gradle.LecturerTest.equalsTest" />
         <item itemvalue="Gradle.ModuleTest.equalsTest" />
         <item itemvalue="Gradle.StudentTest.equalsTest" />
-        <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -217,6 +259,14 @@
       <option name="presentableId" value="Default" />
       <updated>1664029699474</updated>
     </task>
+    <task id="LOCAL-00001" summary="Making updates to Classes and Unit tests">
+      <created>1664732985317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1664732985317</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,5 +279,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Making updates to Classes and Unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making updates to Classes and Unit tests" />
   </component>
 </project>
